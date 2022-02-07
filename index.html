@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Panel List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="panel-container">
+      <div class="panel pActive">
+        <div class="text">
+          <div class="main-text">Cart List</div>
+          <h3 class="sub-text">Please make a selection that suits your choices... </h3>
+        </div>
+        <form>
+          <div class="flex">
+            <div class="form-group">
+              <label for="">Category</label>
+              <select name="" id="" class="form-control">
+                <option  value="Cosmetics">Cosmetics</option>
+                <option class="form-control" value="Accessories">Accessories</option>
+                <option  value="Wines">Wines</option>
+                <option  value="Books">Books</option>
+                <option  value="Fashion">Fashion</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Services</label>
+              <select name="" id="" class="form-control">
+                <option  value="Shipping">Shipping</option>
+                <option  value="Fast Track">Fast Track</option>
+                <option  value="Deliveries">Deliveries</option>
+              </select>
+              <small id="helpId" class="text-muted">Please select a service</small>
+            </div>
+            <div class="form-group">
+              <label for="">Agents</label>
+              <select name="" id="" class="form-control">
+                <option  value="Exporting">Exporting</option>
+                <option  value="Importing">Importing</option>
+              </select>
+              <small id="helpId" class="text-muted">24hrs agent accessibility</small>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="panel">
+        <div class="text">
+          <h3>Please select service... </h3>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="">I'm available on or after</label>
+            <input type="text" value="current date by default" id="date" class="form-control">
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label for="">Availability</label>
+            <div class="flex">
+              <div class="day">
+                <h3>Mon</h3>
+                <div class="icon"><i class="fas fa-check"></i></div>
+              </div>
+              <div class="day">
+                <h3>Tue</h3>
+                <div class="icon"><i class="fas fa-check"></i></div>
+              </div>
+              <div class="day">
+                <h3>Wed</h3>
+                <div class="icon"><i class="fas fa-check"></i></div>
+              </div>
+              <div class="day">
+                <h3>Thur</h3>
+                <div class="icon"><i class="fas fa-check"></i></div>
+              </div>
+              <div class="day">
+                <h3>Fri</h3>
+                <div class="icon"><i class="fas fa-check"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="flex">
+            <div class="form-group">
+              <label for="">Starts From</label>
+              <input type="time" name="" id="time" class="form-control">
+              <small id="helpId" class="text-muted">24hrs agent accessibility</small>
+            </div>
+            <div class="form-group">
+              <label for="">Ends By</label>
+              <input type="time" name="" id="time" class="form-control">
+              <small id="helpId" class="text-muted">24hrs agent accessibility</small>
+            </div>
+          </div> 
+        </form>
+      </div>
+      <div class="panel">
+        <div class="text">
+          <h3 id="text"></h3>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" value="current date by default" id="date" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Phone</label>
+            <input type="number" name="" id="time" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" name="" id="time" class="form-control">
+            <small id="helpId" class="text-muted">support@shoppinglist.com</small>
+          </div> 
+        </form>
+      </div>
+
+      <hr>
+
+      <div class="sub-container">
+        <div class="progress" id="progress"></div>
+        <div class="wrapper">
+          <div class="circle active">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+        </div>
+      </div>
+      <div class="button">
+        <input type="button" value="Back" class="btn" id="prev">
+        <input type="button" value="Next" class="btn" id="next">
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
